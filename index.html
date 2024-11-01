@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -81,7 +82,7 @@
         .hero .content .text .btn {
             background-color: #4caf50;
             color: white;
-            border: 1px solid #222741;;
+            border: 1px solid #222741;
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
@@ -102,7 +103,7 @@
         }
         .hero .content img:hover {
             transform: scale(1.05);
-        }
+ }
         .hero .content .text h1:hover {
             transform: scale(1.05);
         }
@@ -110,11 +111,19 @@
             position: fixed;
             bottom: 20px;
             right: 20px;
-            background-color: #3f51b5;
+            background-color: #25d366;
             color: white;
-            padding: 10px;
+            padding: 15px;
             border-radius: 50%;
             font-size: 24px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .whatsapp:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+            color: white;
         }
         @media (min-width: 768px) {
             .hero .content {
@@ -122,8 +131,8 @@
                 text-align: left;
             }
             section {
-            padding: 60px 0;
-        }
+                padding: 60px 0;
+            }
             .hero .content .text {
                 margin-left: 20px;
                 margin-top: 0;
@@ -154,37 +163,39 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">
-            <img src="https://storage.googleapis.com/a1aa/image/eNfppNCgVGrkXUr2DbFH6VF3ycKwYFlOMUYiWTcwTExzgUrTA.jpg" alt="Klinik Utama Pandawa Logo" height="50">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Beranda</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">Tentang Kami</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Layanan
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                        <a class="dropdown-item" href="#services">Poliklinik</a>
-                        <a class="dropdown-item" href="#services">Poli Gigi</a>
-                        <a class="dropdown-item" href="#services">Laboratorium</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#galeri">Galeri</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Hubungi Kami</a>
-                </li>
-            </ul>
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://storage.googleapis.com/a1aa/image/eNfppNCgVGrkXUr2DbFH6VF3ycKwYFlOMUYiWTcwTExzgUrTA.jpg" alt="Klinik Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Layanan
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <a class="dropdown-item" href="#poliklinik">Poliklinik</a>
+                            <a class="dropdown-item" href="#poli-gigi">Poli Gigi</a>
+                            <a class="dropdown-item" href="#laboratorium">Laboratorium</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#keunggulan">Ke unggulan Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Hubungi Kami</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <div class="hero">
@@ -198,33 +209,33 @@
             </div>
         </div>
     </div>
-    <section id="about" class="py-5">
+    <section id="about" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center" data-aos="fade-up">Tentang Kami</h2>
-            <p class="text-center" data-aos="fade-up">Klinik Utama Pandawa adalah klinik spesialis kulit dan kelamin yang berkomitmen untuk memberikan layanan kesehatan terbaik kepada pasien. Kami memiliki tim dokter yang berpengalaman dan telah menangani ribuan pasien dengan berbagai masalah kulit dan kelamin.</p>
+            <p class="text -center mb-5" data-aos="fade-up">Klinik Utama XXX XX adalah klinik spesialis kulit dan kelamin yang berkomitmen memberikan layanan kesehatan terbaik. Kami memiliki tim dokter berpengalaman yang telah menangani ribuan pasien.</p>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="dokter.jpg" class="card-img-top animate__animated animate__fadeIn" alt="Doctor 1">
-                        <div class="card-body">
+                <div class="col-md-4" data-aos="fade-up " data-aos-delay="100">
+                    <div class="card shadow-lg border-0 rounded mb-4">
+                        <img src="dokter.jpg" class="card-img-top rounded-top" alt="Doctor 1">
+                        <div class="card-body text-center">
                             <h5 class="card-title">Dr. Jane Doe</h5>
                             <p class="card-text">Spesialis Kulit</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="dokter.jpg" class="card-img-top animate__animated animate__fadeIn" alt="Doctor 2">
-                        <div class="card-body">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card shadow-lg border-0 rounded mb-4">
+                        <img src="dokter.jpg" class="card-img-top rounded-top" alt="Doctor 2">
+                        <div class="card-body text-center">
                             <h5 class="card-title">Dr. John Smith</h5>
                             <p class="card-text">Spesialis Kelamin</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="dokter.jpg" class="card-img-top animate__animated animate__fadeIn" alt="Doctor 3">
-                        <div class="card-body">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card shadow-lg border-0 rounded mb-4">
+                        <img src="dokter.jpg" class="card-img-top rounded-top" alt="Doctor 3">
+                        <div class="card-body text-center">
                             <h5 class="card-title">Dr. Emily Johnson</h5>
                             <p class="card-text">Dokter Umum</p>
                         </div>
@@ -233,43 +244,87 @@
             </div>
         </div>
     </section>
-    <section id="services" class="py-5 bg-light">
+
+    <section id="services" class="py-5">
         <div class="container">
             <h2 class="text-center" data-aos="fade-up">Layanan Kami</h2>
+            <p class="text-center mb-5" data-aos="fade-up">Klinik XXXXX menyediakan berbagai layanan kesehatan untuk memenuhi kebutuhan Anda.</p>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card shadow-sm border-0 h-100 text-center">
                         <div class="card-body">
+                            <i class="fas fa-user-md fa-3x mb-4 text-primary"></i>
                             <h5 class="card-title">Konsultasi Kulit</h5>
-                            <p class="card-text">Konsultasi mengenai berbagai masalah kulit dengan dokter spesialis.</p>
+                            <p class="card-text">Konsultasikan masalah kulit Anda dengan dokter spesialis kami yang berpengalaman.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card shadow-sm border-0 h-100 text-center">
                         <div class="card-body">
+                            <i class="fas fa-stethoscope fa-3x mb-4 text-primary"></i>
                             <h5 class="card-title">Pengobatan Kelamin</h5>
-                            <p class ="card-text">Pengobatan untuk berbagai penyakit kelamin dengan pendekatan yang tepat.</p>
+                            <p class="card-text">Penanganan untuk berbagai penyakit kelamin dengan pendekatan yang tepat dan aman.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card shadow-sm border-0 h-100 text-center">
                         <div class="card-body">
+                            <i class="fas fa-spa fa-3x mb-4 text- primary"></i>
                             <h5 class="card-title">Perawatan Kulit</h5>
-                            <p class="card-text">Perawatan kulit dengan teknologi terbaru untuk hasil yang optimal.</p>
+                            <p class="card-text">Rasakan perawatan kulit menggunakan teknologi terbaru untuk hasil optimal.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="contact" class="py-5">
+
+    <section id="keunggulan" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Keunggulan Kami</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card keunggulan text-center p-4 border-0">
+                        <div class="icon">
+ <i class="fas fa-user-md"></i>
+                        </div>
+                        <br><br>
+                        <h5 class="card-title">Dokter Profesional</h5>
+                        <p class="card-text">Dilengkapi dengan tim dokter yang ahli dan profesional dalam menangani berbagai permasalahan kesehatan.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card keunggulan text-center p-4 border-0">
+                        <div class="icon">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                        <br><br>
+                        <h5 class="card-title">Fasilitas Nyaman</h5>
+                        <p class="card-text">Ruang perawatan yang nyaman dan bersih untuk kenyamanan serta keamanan pasien selama perawatan.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card keunggulan text-center p-4 border-0">
+                        <div class="icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <br><br>
+                        <h5 class="card-title">Pelayanan Cepat</h5>
+                        <p class="card-text">Proses pelayanan yang efisien untuk memastikan kebutuhan kesehatan Anda segera terpenuhi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center" data-aos="fade-up">Kontak Kami</h2>
-            <p class="text-center" data-aos="fade-up">Jika Anda memiliki pertanyaan atau ingin membuat janji temu, silakan hubungi kami melalui kontak di bawah ini.</p>
+            <p class="text-center mb-5" data-aos="fade-up">Hubungi kami untuk pertanyaan atau membuat janji temu.</p>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-right">
                     <form>
                         <div class="form-group">
                             <label for="name">Nama</label>
@@ -286,28 +341,46 @@
                         <button type="submit" class="btn btn-primary">Kirim</button>
                     </form>
                 </div>
-                <div class="col-md-6">
-                    <p>Alamat: Jalan Raya Pandawa No. 123, Jakarta Selatan</p>
-                    <p>Telepon: 021-12345678</p>
-                    <p>Email: [info@klinikpandawa.com](mailto:info@klinikpandawa.com)</p>
+                <div class="col-md-6" data-aos="fade-left">
+                    <h5>Alamat</h5>
+                    <p>Jalan Raya Garut indonesia</p>
+                    <h5>Telepon</h5>
+                    <p>021-12345678</p>
+                    <h5>Email</h5>
+                    <p><a href="mailto:info@kliniksehat.com">info@kliniksehat.com</a></p>
                 </div>
             </div>
         </div>
     </section>
-    <a class="whatsapp" href="#">
-        <i class="fab fa-whatsapp"></i>
-    </a>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 50) {
-                $('.navbar').addClass('scrolled');
-            } else {
-                $('.navbar').removeClass('scrolled');
-            }
+        $(document).ready(function(){
+            // Tutup navbar saat item menu diklik
+            $('.navbar-nav>li>a').on('click', function(){
+                if (!$(this).hasClass('dropdown-toggle')) {
+                    $('.navbar-collapse').collapse('hide');
+                }
+            });
+
+            // Tutup navbar saat ikon open/close navbar diklik
+            $('.navbar-toggler').on('click', function(){
+                $('.navbar-collapse').collapse('toggle');
+            });
+
+            // Fungsi scroll untuk mengubah warna navbar
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 50) {
+                    $('.navbar').addClass('scrolled');
+                } else {
+                    $('.navbar').removeClass('scrolled');
+                }
+            });
         });
     </script>
+    <a class="whatsapp" href="#">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 </body>
 </html>
