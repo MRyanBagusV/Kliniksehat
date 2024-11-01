@@ -157,6 +157,19 @@
                 font-size: 48px;
             }
         }
+            footer {
+        background-color: #343a40; /* Dark background */
+    }
+    footer a {
+        text-decoration: none; /* Remove underline */
+        transition: color 0.3s;
+    }
+    footer a:hover {
+        color: #ffc107; /* Change color on hover */
+    }
+    .social-icons a {
+        font-size: 20px; /* Icon size */
+    }
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -358,17 +371,22 @@
                         <button type="submit" class="btn btn-primary">Kirim</button>
                     </form>
                 </div>
-                <div class="col-md-6" data-aos="fade-left">
-                    <h5>Alamat</h5>
-                    <p>Jalan Raya Garut indonesia</p>
-                    <h5>Telepon</h5>
-                    <p>021-12345678</p>
-                    <h5>Email</h5>
-                    <p><a href="mailto:info@kliniksehat.com">info@kliniksehat.com</a></p>
-                </div>
             </div>
         </div>
     </section>
+            <footer class="bg-dark text-white py-4">
+            <div class="container text-center">
+                <h5>Kontak Kami</h5>
+                <p><strong>Alamat:</strong> Jalan Raya Garut, Indonesia</p>
+                <p><strong>Telepon:</strong> <a href="tel:02112345678" class="text-white">021-12345678</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@kliniksehat.com" class="text-white">info@kliniksehat.com</a></p>
+                <div class="social-icons mt-3">
+                    <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
