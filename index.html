@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Klinik Utama Pandawa</title>
+    <title>Klinik Berkah Sehat</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -121,6 +121,9 @@
                 flex-direction: row;
                 text-align: left;
             }
+            section {
+            padding: 60px 0;
+        }
             .hero .content .text {
                 margin-left: 20px;
                 margin-top: 0;
@@ -163,23 +166,23 @@
                     <a class="nav-link" href="#">Beranda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Tentang Kami</a>
+                    <a class="nav-link" href="#about">Tentang Kami</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Layanan
                     </a>
                     <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                        <a class="dropdown-item" href="#">Layanan 1</a>
-                        <a class="dropdown-item" href="#">Layanan 2</a>
-                        <a class="dropdown-item" href="#">Layanan 3</a>
+                        <a class="dropdown-item" href="#services">Poliklinik</a>
+                        <a class="dropdown-item" href="#services">Poli Gigi</a>
+                        <a class="dropdown-item" href="#services">Laboratorium</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Galeri</a>
+                    <a class="nav-link" href="#galeri">Galeri</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Hubungi Kami</a>
+                    <a class="nav-link" href="#contact">Hubungi Kami</a>
                 </li>
             </ul>
         </div>
@@ -195,6 +198,102 @@
             </div>
         </div>
     </div>
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Tentang Kami</h2>
+            <p class="text-center" data-aos="fade-up">Klinik Utama Pandawa adalah klinik spesialis kulit dan kelamin yang berkomitmen untuk memberikan layanan kesehatan terbaik kepada pasien. Kami memiliki tim dokter yang berpengalaman dan telah menangani ribuan pasien dengan berbagai masalah kulit dan kelamin.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="dokter.jpg" class="card-img-top animate__animated animate__fadeIn" alt="Doctor 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. Jane Doe</h5>
+                            <p class="card-text">Spesialis Kulit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="dokter.jpg" class="card-img-top animate__animated animate__fadeIn" alt="Doctor 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. John Smith</h5>
+                            <p class="card-text">Spesialis Kelamin</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="dokter.jpg" class="card-img-top animate__animated animate__fadeIn" alt="Doctor 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. Emily Johnson</h5>
+                            <p class="card-text">Dokter Umum</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Layanan Kami</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Konsultasi Kulit</h5>
+                            <p class="card-text">Konsultasi mengenai berbagai masalah kulit dengan dokter spesialis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Pengobatan Kelamin</h5>
+                            <p class ="card-text">Pengobatan untuk berbagai penyakit kelamin dengan pendekatan yang tepat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Perawatan Kulit</h5>
+                            <p class="card-text">Perawatan kulit dengan teknologi terbaru untuk hasil yang optimal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Kontak Kami</h2>
+            <p class="text-center" data-aos="fade-up">Jika Anda memiliki pertanyaan atau ingin membuat janji temu, silakan hubungi kami melalui kontak di bawah ini.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nama</label>
+                            <input type="text" class="form-control" id="name" placeholder="Nama Anda">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email Anda">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea class="form-control" id="message" placeholder="Pesan Anda"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kirim</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <p>Alamat: Jalan Raya Pandawa No. 123, Jakarta Selatan</p>
+                    <p>Telepon: 021-12345678</p>
+                    <p>Email: [info@klinikpandawa.com](mailto:info@klinikpandawa.com)</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <a class="whatsapp" href="#">
         <i class="fab fa-whatsapp"></i>
     </a>
