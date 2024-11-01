@@ -26,10 +26,25 @@
         .navbar-nav .nav-link {
             color: white !important;
             font-size: 16px;
+            position: relative; /* Untuk efek underline */
             transition: color 0.3s;
         }
+        .navbar-nav .nav-item.active .nav-link {
+            color: #ffeb3b !important; /* Warna saat item menu aktif */
+            font-weight: bold;
+        }
+        .navbar-nav .nav-item.active .nav-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -5px; /* Jarak dari teks */
+            height: 2px; /* Ketebalan garis bawah */
+            background-color: #ffeb3b; /* Warna garis bawah saat aktif */
+            width: 100%; /* Garis bawah penuh saat aktif */
+        }
         .navbar-nav .nav-link:hover {
-            color: #ffeb3b !important;
+            color: #ffc107 !important; /* Warna saat item menu di-hover */
         }
         .navbar-nav .dropdown-menu {
             background-color: #3f51b5;
@@ -172,7 +187,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="#">Beranda</a>
                     </li>
                     <li class="nav-item">
@@ -183,10 +198,9 @@
                             Layanan
                         </a>
                         <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                            <a class="dropdown-item" href="#poliklinik">Poli Klinik</a>
+                            <a class="dropdown-item" href="#poliklinik">Poliklinik</a>
                             <a class="dropdown-item" href="#poli-gigi">Poli Gigi</a>
                             <a class="dropdown-item" href="#laboratorium">Laboratorium</a>
-                            <a class="dropdown-item" href="#laboratorium">Poli Kebidanan</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -358,30 +372,29 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function(){
-            // Tutup navbar saat item menu diklik
             $('.navbar-nav>li>a').on('click', function(){
-                if (!$(this).hasClass('dropdown-toggle')) {
-                    $('.navbar-collapse').collapse('hide');
-                }
+                $('.navbar-nav>li').removeClass('active');
+                $(this).parent().addClass('active');
             });
-
-            // Tutup navbar saat ikon open/close navbar diklik
-            $('.navbar-toggler').on('click', function(){
-                $('.navbar-collapse').collapse('toggle');
-            });
-
-            // Fungsi scroll untuk mengubah warna navbar
-            $(window).scroll(function() {
-                if ($(this).scrollTop() > 50) {
+            
+            $(window).on('scroll', function () {
+                if ($(window).scrollTop()) {
                     $('.navbar').addClass('scrolled');
                 } else {
                     $('.navbar').removeClass('scrolled');
                 }
+
+                // Set 'active' class based on scroll position
+                const scrollPos = $(window).scrollTop();
+                $('.nav-item').each(function () {
+                    const section = $($(this).find('a').attr('href'));
+                    if (section.length && section.offset().top <= scrollPos + 100) {
+                        $('.nav-item').removeClass('active');
+                        $(this).addClass('active');
+                    }
+                });
             });
         });
     </script>
-    <a class="whatsapp" href="#">
-        <i class="fab fa-whatsapp"></i>
-    </a>
 </body>
 </html>
